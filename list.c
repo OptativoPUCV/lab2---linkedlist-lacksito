@@ -35,6 +35,7 @@ List * createList() {
      return NULL;
   }
   newList ->head = NULL;
+  newList->current = NULL;
   return newList;
 }
 
