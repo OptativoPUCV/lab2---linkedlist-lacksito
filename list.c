@@ -35,11 +35,20 @@ List * createList() {
      return NULL;
   }
   newList ->head = NULL;
-     return newList;
+  return newList;
 }
 
-void * firstList(List * list) {
+void * firstList(List * list) 
+{
+  if (list ->head != NULL)
+  {
+    list ->current = list->head;
+    return &(list->head_>data);
+  }
+  else
+  {
     return NULL;
+  }
 }
 
 void * nextList(List * list) {

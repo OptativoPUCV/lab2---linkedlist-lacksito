@@ -10,3 +10,22 @@ Wed 23 Aug 2023 07:06:31 PM UTC:
  tests:  1|5
 total_score: 10/70
 b40c1c3
+Wed 23 Aug 2023 07:25:39 PM UTC: 
+ list.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:46:20: error: ‘List’ {aka ‘struct List’} has no member named ‘head_’; did you mean ‘head’?
+   46 |     return &(list->head_>data);
+      |                    ^~~~~
+      |                    head
+list.c:46:26: error: ‘data’ undeclared (first use in this function)
+   46 |     return &(list->head_>data);
+      |                          ^~~~
+list.c:46:26: note: each undeclared identifier is reported only once for each function it appears in
+list.c:52:1: error: control reaches end of non-void function [-Werror=return-type]
+   52 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9afe478
