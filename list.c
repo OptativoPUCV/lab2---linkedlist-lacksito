@@ -34,11 +34,19 @@ List * createList() {
   {
     return NULL;
   }
+  newList->head = NULL;
+  newList->current = NULL;
+  newList->tail = NULL;
   return newList;
 }
 
 void * firstList(List * list) 
 {
+  if (list->head != NULL)
+  {
+    list->current = list->head;
+    return list->current->data;
+  }
   return NULL;
 }
 
