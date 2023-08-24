@@ -34,12 +34,12 @@ List * createList() {
   {
     return NULL;
   }
-  return NULL;
+  return newList;
 }
 
 void * firstList(List * list) 
 {
-  return newList;
+  return NULL;
 }
 
 void * nextList(List * list) {
