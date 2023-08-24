@@ -80,3 +80,19 @@ Wed 23 Aug 2023 07:42:12 PM UTC:
  tests:  0|6
 total_score: 0/70
 c2dab4b
+Thu 24 Aug 2023 07:43:55 PM UTC: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:10: error: ‘newList’ undeclared (first use in this function); did you mean ‘nextList’?
+   42 |   return newList;
+      |          ^~~~~~~
+      |          nextList
+list.c:42:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e61e1db
